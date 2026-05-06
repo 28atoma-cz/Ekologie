@@ -1,2 +1,0 @@
-# Ekologie
-Ekologie
