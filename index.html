@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
+    
 <head>
     <meta charset="UTF-8">
     <title>Ekologie</title>
@@ -48,6 +49,7 @@
             border-right: black;
             text-align: left;
             width: 100%;
+            height: 50px;
         }
         li {
             margin-left: 5%;
@@ -55,6 +57,20 @@
         img {
             display: block;
             margin: 0 auto;
+        }
+        .about-btn {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px 14px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .top-right {
+            position: absolute;
+            right: 20px;
+            top: 15px;
         }
 
     </style>
@@ -66,7 +82,6 @@
 </header>
 
 <main>
-
 <div class="sidebar">
     <button onclick="showContent('tema1')">Ekologie</button><br>
     <button onclick="showContent('tema2')">Proč je ekologie důležitá</button><br>
@@ -77,7 +92,7 @@
     <button onclick="showContent('tema8')">Zajimavosti</button><br>
     <button onclick="showContent('tema10')">Ochrana přírody</button>
     <button onclick="showContent('tema7')">Největší problémy</button><br>
-    <button onclick="showContent('tema9')"><b style="color: yellow;">O nás</b></button><br>
+    <button onclick="showContent('tema9')">O nás</button>
 </div>
 
 
@@ -89,6 +104,7 @@
         <h2>Co je to vlastně ekologie?</h2>	
         <p>Pojem ekologie pochází z řeckých slov oikos (dům) a logos (věda). Doslova je to tedy „věda o domově“. Zkoumá vztahy mezi organismy (rostlinami, zvířaty, lidmi) a jejich neživým okolím (vodou, vzduchem, půdou).</p>
         <p>Odborníci se nezaměřují pouze na jednotlivé druhy, ale na celé ekosystémy. Příkladem může být les, kde stromy produkují kyslík, hmyz opyluje rostliny, šelmy regulují počty býložravců a mikroorganismy v půdě rozkládají odumřelou hmotu. Vše funguje v dokonalé, ale křehké rovnováze.</p>
+        <img src="Ekologie.jpg" alt="Ekologie" style="width: 30%; height: auto; float: left;">
     </div>
     <div id="tema2" style="display:none"> 
         <h2>Proč je ekologie důležitá?</h2>
@@ -98,6 +114,7 @@
             <li>Ochrana přírodních zdrojů: Čistá voda, úrodná půda a čerstvý vzduch nejsou samozřejmostí. Ekologie nás učí, jak tyto zdroje využívat tak, aby se stihly obnovovat.</li>
             <li>Zmírnění klimatických změn: Porozumění koloběhu uhlíku a energie v přírodě nám pomáhá hledat cesty, jak snížit dopady oteplování planety.</li>
         </p>
+        <img src="ekoznak.png" alt="Ekologie znak" style="width: 10%; height: auto; float: left;">
     </div>
     <div id="tema3" style="display:none"> 
         <h2>Aktuální hrozby a změny v krajině</h2>
@@ -114,8 +131,10 @@
             <li>Revitalizace toků: Navracení řek do jejich původních koryt, aby lépe zadržovaly vodu.</li>
             <li>Podpora udržitelného zemědělství: Omezování pesticidů a vytváření mezí či biopásů.</li>
             <li>Osobní odpovědnost: Každý jednotlivec může přispět snižováním své „ekologické stopy“ (omezení plýtvání, podpora lokálních produktů).</li>
+
         </p>
         <p>Ekologie nás učí, že příroda bez člověka přežije, ale člověk bez fungující přírody nikoliv. Cílem není vrátit se do jeskyní, ale najít způsob, jak moderně žít, aniž bychom ničili základy svého vlastního přežití.</p>
+        <img src="Zemekoule.webp" alt="Ekologie" style="width: 15%; height: auto; float: left;">
     </div>
     <div id="tema4" style="display:none">
         <h2>Jak lidé (ne)třídí odpad</h2>
@@ -133,10 +152,10 @@
         <h2>Sucho začíná doma: Pravda o naší každodenní spotřebě!</h2>
         <p><b>Voda je jedním z nejužitečnějších přírodních zdrojů, jejichž spotřeba se v každé každé části světa výrazně liší. Česká republika patří, co se týká šetření vody k úspornějším státům, když to však porovnáme s ostatními regiony, výsledná spotřeba vody by nás mohla překvapit.</b></p>
         <p>V České republice se roční spotřeba vody pohybuje okolo 32-36 litrů na osobu. Došlo, tak k výraznému poklesu využití vody od 80.let. Za to můžeme vděčit převážně úspornějším spotřebičům a většímu kladení důrazu na ekologii. Na celosvětové úrovni je situace složitější. Spotřeba vody v domácnostech se výrazně liší podle ekonomické vyspělosti jednotlivých zemí. Zatímco v některých rozvojových oblastech lidé vystačí s méně než 100 litry denně, v bohatších státech může spotřeba přesahovat i 300 litrů na osobu a den. Česká republika se tak pohybuje spíše na spodní hranici spotřeby mezi vyspělými zeměmi.</p>
-        <img src="FakturaceVody.jpg" alt="Fakturace vody" style="width: 80%; height: auto">
+        <img src="FakturaceVody.jpg" alt="Fakturace vody" style="width: 50%; height: auto">
         <p>Důležitým faktorem je ale takzvaná nepřímá neboli „virtuální“ spotřeba vody. Ta zahrnuje vodu využitou ke spotřební výrobě zboží, potravin, služeb. Zatímco přímá domácí spotřeba tvoří jen malou část celkového využití vody, většina připadá na zemědělství (přibližně 70 %) a průmysl.</p>
         <p>Když se započítá i tahle skrytá spotřeba, průměrný člověk, tak spotřebuje až okolo 1000 litrů za den. To znamený, že skutečný dopad spotřeby vody nezávisí jen na tom kolik vody denně spotřebujeme, ale především tím, jaké předměty kupujeme a jaký žijeme životní styl.</p>
-        <img src="SpotrebaVody.jpg" alt="Spotřeba vody" style="width: 80%; height: auto">
+        <img src="SpotrebaVody.jpg" alt="Spotřeba vody" style="width: 50%; height: auto">
         <p>Z porovnání vyplývá, že Česká republika je v oblasti přímé spotřeby vody poměrně efektivní. Přesto však i zde existuje prostor ke zlepšení. Odpovědné nakládání s vodou, omezení plýtvání a informovaná volba produktů mohou přispět k ochraně tohoto nenahraditelného zdroje.</p>
         <h2>Stálý růst emisií CO2 by se měl zpomalit</h2>
         <p>Už od roku 2015 nás trápí nekontrolovatelný vzrůst emisí CO2, tehdy vznikla tzv. Pařížská dohoda, která zahrnuje přes 196 zemí. Konkrétně všechny země EU, Indie, Čína a USA. Původní plán zahrnoval pozastavení klimatického oteplování až o 2°C. To se však úplně nedařilo, a tak si Pařížská dohoda dne 4. května 2026 stanovila nový cíl a to dosáhnutí uhlíkové neutrality a snížení emisí.</p>
@@ -188,32 +207,32 @@
         <p>Jaké jsou největší problémy dnešní přírody a kdo za ně nese odpovědnost? Na to
         odpovídala profesorka biologie Anita Weidenhöferová v našem rozhovoru o ochraně
         životního prostředí.</p>
-        <p>Co si máme představit pod pojmem ochrana přírody?</p>
+        <p><b>Co si máme představit pod pojmem ochrana přírody?</b></p>
         <p>Pod pojmem ochrana přírody si můžeme představit, že nebudeme ji ničit, budeme chránit
         ohrožené druhy, zamezit vyhynutí některých druhů, zamezit šíření invazních druhů v krajině.
-        <p>Proč je dnes ochrana přírody tak důležitá?</p>
+        <p><b>Proč je dnes ochrana přírody tak důležitá?</b></p>
         <p>Protože se snižuje biologická diverzita, to znamená, že se snižuje počet druhů, že se naruší
         celý ekosystém.</p>
-        <p>Jaké problémy považujete za největší?</p>
+        <p><b>Jaké problémy považujete za největší?</b></p>
         <p>Vymírání těch druhů, ubývá jednak hmyzu, množství, že se rozšiřují invazní druhy, které pak
         ničí ty druhy, které jsou původní v těch zemích, že se přemnoží některý druhy.</p>
-        <p>Má podle Vás smysl, když jednotlivec něco změní?</p>
+        <p><b>Má podle Vás smysl, když jednotlivec něco změní?</b></p>
         <p>Vždycky má smysl, když něco změní jednotlivec, protože každý může začít sám u sebe.
         Kdo nemůže změnit něco globálně, ale začne sám u sebe, tak určitě něco změní.</p>
-        <p>Tak jak který může každý člověk snížit svou ekologickou stopu?</p>
+        <p><b>Tak jak který může každý člověk snížit svou ekologickou stopu?</b></p>
         <p>Že si rozmyslí co koupí, kam pojede a čím pojede.</p>
-        <p>Co děláte osobně vy pro přírodu?</p>
+        <p><b>Co děláte osobně vy pro přírodu?</b></p>
         <p>Rozmyslím si čím a kam pojedu a co si koupím. Dejme tomu.</p>
-        <p>Kdo nese největší odpovědnost za ochranu přírody? Jednotlivec nebo firmy?</p>
+        <p><b>Kdo nese největší odpovědnost za ochranu přírody? Jednotlivec nebo firmy?</b></p>
         <p>Spíš firmy a postavení těch států, když řeší velké ekologické problémy. Vždycky ty velké
         firmy spotřebují hodně energie zbytečně, například se někde svítí, třeba v Alze, tam každý
         telefon svítí, tak kdyby nesvítil tak by se taky nic nestalo a bylo by to lepší pro přírodu.
         Říkám spíš firmy.</p>
-        <p>Jak vidíte budoucnost přírody?</p>
+        <p><b>Jak vidíte budoucnost přírody?</b></p>
         <p>Snad dobře, snad nevymře všechno a snad přežijeme i my.</p>
     </div>
     <div id="tema8" style="display:none">
-        <h2>Fejeton: Jak jsem se rozhodla zachránit planetu</h2>
+        <h2>Jak jsem se rozhodla zachránit planetu</h2>
         <p>Minulý týden jsem se rozhodla, že začnu žít ekologicky. Viděla jsem na TikToku video o tom, kolik plastu plave v moři a jak umírají želvičky, a řekla jsem si: „Dost, ode dnešního dne budu lepší než ostatní!”</p>
         <p>Začalo to v kuchyni. Máma mě málem přizabila, když jsem začala přebírat koš a vysvětlovat jí, že kelímek od jogurtu fakt nemůže jít do papíru jen proto, že je na něm papírový přebal. Strávila jsem pět minut tím, že jsem ten papír oddělovala ,abych nakonec zjistila, že jsem si u toho celou ruku zapatlala zbytkem jogurtu.</p>
         <p>Pak přišla cesta do práce. Vzala jsem si do batohu místo plastových krabiček a plastových sáčků vlastní sklenice, ve kterých jsem měla kuře s rýží, salát a další jídlo na celý den. Lidé na mě koukali jako na alkoholika, kterému v batohu cinká alespoň tak pět flašek rumu a aby toho nebylo málo, sklenice se mi v batohu o sebe rozbily a bylo po obědě.</p>
@@ -221,7 +240,18 @@
         <p>Večer jsem si uvědomila jednu věc. Být stoprocentně eko je hrozná dřina. Ale i když jsem pak musela doma hodinu vysávat batoh od střepů a vytírat smetanovou omáčku od oběda, ten pocit, že jsem aspoň zkusila nevyhodit další tři igelitky, byl docela fajn. Možná nevyčistím oceán za jedno odpoledne, ale aspoň už vím, jak se recykluje ten blbej jogurt.</p>
     </div>
     <div id="tema9" style="display:none">
-        <p>To jsme my.</p>
+        <p>Jsme tým studentů ze třídy 2.A z gymnázia Elgartova a společně jsme vytvořili tento web zaměřený na ekologii a ochranu životního prostředí. Naším cílem bylo přiblížit důležitost péče o přírodu, ukázat možnosti, jak může každý z nás pomoci planetě, a zároveň vytvořit přehledný a zajímavý web pro ostatní návštěvníky.
+
+        <p>Na projektu spolupracovali:</p>
+        <p>
+             <li>Vojta Kuřítka</li>
+             <li>Nela Pavelková</li>
+              <li>Karolína Pospíšilová</li>
+              <li>Vendula Pazourová</li>
+              <li>Viktor Tomáš</li>
+              <li>Alex Lengyel</li>
+        </p>
+        <p>Děkujeme, že jste navštívili náš web, a doufáme, že vás inspiruje k tomu, abyste i vy přispěli k lepší budoucnosti naší planety.</p>
     </div>
     <div id="tema10" style="display:none">
         <h2>Výsadba stromů ve Vysočině po kůrovcové kalamitě</h2>
@@ -231,6 +261,7 @@
         <p>Zalesňování neprobíhá jen jednorázově, ale dlouhodobě a na více místech. Sázejí lesníci, obce, školy i dobrovolníci. V Kraji Vysočina se tak konají každoročně desítky až stovky menších i větších výsadeb, hlavně na jaře a na podzim, kdy se stromky nejlépe ujímají.</p>
         <p>Jeden konkrétní příklad je z Jihlavska, kde se v roce 2025 během jednoho dne vysadilo asi 2 500 sazenic stromů na místě bývalého smrkového lesa, který byl zničen kůrovcem. Podobné akce se ale pořád opakují na různých místech kraje.</p>
         <p>Celkově jde o to, aby nové lesy byly odolnější než ty původní. Smíšené porosty lépe zadržují vodu v krajině, pomáhají proti erozi půdy a zároveň snižují riziko, že se znovu přemnoží škůdci jako kůrovec. Cílem je, aby lesy v budoucnu lépe zvládaly sucho i změny klimatu.</p>
+        <img src="Vysadba.jpg" alt="Výsadba stromů" style="width: 35%; height: auto">
         <h2>Úbytek hmyzu je stále vážnější problém</h2>
         <p>V posledních letech se stále častěji mluví o tom, že z přírody ubývá hmyz. Na první pohled to může vypadat jako drobnost, ale ve skutečnosti jde o problém, který ovlivňuje celé fungování přírody i zemědělství. Hmyz opyluje rostliny, rozkládá organickou hmotu a je základní potravou pro mnoho dalších živočichů. Když začne mizet, postupně se tím narušuje celý ekosystém.</p>
         <p>Podle údajů, které uvádí Evropská agentura pro životní prostředí (EEA), je v některých částech Evropy dnes létajícího hmyzu jen asi 25 až 40 % oproti stavu před 30 lety. Jinými slovy - v některých oblastech je ho zhruba o polovinu až tři čtvrtiny méně než dřív. Tento pokles není jen krátkodobý výkyv, ale dlouhodobý trend, který vědci sledují už desítky let.</p>
